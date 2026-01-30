@@ -14,7 +14,7 @@ You can also test the model on your own stereo image pairs by replacing the inpu
 
 ## Checkpoint
 Before running the demo, please download the pretrained checkpoints from
- [google drive](https://drive.google.com/file/d/1A4DFCuwH0SIJnxO3emRpLh_yhann6QyM/view?usp=sharing) . 
+ [google drive](https://drive.google.com/drive/folders/1UvDx296pVk7pC2rozKIpQF_EXcOleZOB?usp=sharing) . 
 Then place them in: `./checkpoints/`
 
 
