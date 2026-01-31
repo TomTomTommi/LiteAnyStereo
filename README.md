@@ -1,11 +1,6 @@
 <h1 align='center' style="text-align:center; font-weight:bold; font-size:2.0em;letter-spacing:2.0px;">
 Lite Any Stereo: Efficient Zero-Shot Stereo Matching<h1>      
 
-<div align="center" style="font-size:14px; margin-top:8px;">
-  Junpeng Jing · Weixun Luo · Ye Mao · Krystian Mikolajczyk<br/>
-  Imperial College London
-</div>
-
 <div align="center">
   <a href="https://arxiv.org/abs/2511.16555" target="_blank" rel="external nofollow noopener">
   <img src="https://img.shields.io/badge/Paper-arXiv-deepgreen" alt="Paper arXiv"></a>
