@@ -1,7 +1,22 @@
-# Lite Any Stereo: Efficient Zero-Shot Stereo Matching
+<h1 align='center' style="text-align:center; font-weight:bold; font-size:2.0em;letter-spacing:2.0px;">
+Lite Any Stereo: Efficient Zero-Shot Stereo Matching<h1>      
+<p align='center' style="text-align:center;font-size:.8em;">
+    <a href="https://tomtomtommi.github.io/" target="_blank" style="text-decoration: none;">Junpeng Jing</a>,&nbsp;
+    <a href="https://scholar.google.com/citations?user=2Y0-0C8AAAAJ&hl=en" target="_blank" style="text-decoration: none;">Weixun Luo</a>,&nbsp;
+    <a href="https://yebulabula.github.io/" target="_blank" style="text-decoration: none;">Ye Mao</a>,&nbsp;
+    <a href="https://www.imperial.ac.uk/people/k.mikolajczyk"  target="_blank" style="text-decoration: none;">Krystian Mikolajczyk</a>&nbsp;<br/>
+&nbsp;Imperial College London<br/>
 
-[`Paper`](https://arxiv.org/abs/2511.16555) [[`Project`](https://tomtomtommi.github.io/LiteAnyStereo/)]
+<div align="center">
+  <a href="https://arxiv.org/abs/2511.16555" target="_blank" rel="external nofollow noopener">
+  <img src="https://img.shields.io/badge/Paper-arXiv-deepgreen" alt="Paper arXiv"></a>
+  <a href="https://tomtomtommi.github.io/LiteAnyStereo/" target="_blank" rel="external nofollow noopener">
+  <img src="https://img.shields.io/badge/Project-Page-9cf" alt="Project Page"></a>
+</div>
+</p>
 
+
+![Reading](./assets/fig1.png)
 
 ## Demo 
 Several example stereo image pairs are provided in the `/assets/` directory. 
