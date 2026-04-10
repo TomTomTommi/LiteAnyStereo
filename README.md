@@ -3,8 +3,8 @@ Lite Any Stereo: Efficient Zero-Shot Stereo Matching<h1>
 
 <div align="center">
   <a href="https://arxiv.org/abs/2511.16555" target="_blank" rel="external nofollow noopener">
-  <img src="https://img.shields.io/badge/Paper-Lite Any Stereo-red" alt="Paper arXiv"></a>
-  <a href='https://tomtomtommi.github.io/LiteAnyStereo/'><img src='https://img.shields.io/badge/Project_Page-Lite Any Stereo-deepgreen' alt='Project Page'></a>
+  <img src="https://img.shields.io/badge/-Paper-red" alt="Paper arXiv"></a>
+  <a href='https://tomtomtommi.github.io/LiteAnyStereo/'><img src='https://img.shields.io/badge/-Project Page-deepgreen' alt='Project Page'></a>
 </div>
 </p>
 
