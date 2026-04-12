@@ -160,15 +160,15 @@ def build_norm_correlation_volume(refimg_fea, targetimg_fea, maxdisp):
 
 
 def build_correlation_volume(left_feature, right_feature, max_disp):
-    b, c, h, w = left_feature.size()
-    cost_volume = left_feature.new_zeros(b, max_disp, h, w)
-    for i in range(max_disp):
-        if i > 0:
-            cost_volume[:, i, :, i:] = (left_feature[:, :, :, i:] * right_feature[:, :, :, :-i]).mean(dim=1)
-        else:
-            cost_volume[:, i, :, :] = (left_feature * right_feature).mean(dim=1)
-    cost_volume = cost_volume.contiguous()
-    return cost_volume
+    B, C, H, W = left_feature.shape
+
+    left_volume = left_feature.unsqueeze(2).expand(B, C, max_disp, H, W)
+    padded_right = F.pad(right_feature, (max_disp - 1, 0, 0, 0))
+    unfolded_right = padded_right.unfold(3, W, 1)              # (B, C, H, max_disp, W)
+    right_volume = torch.flip(unfolded_right, [3]).permute(0, 1, 3, 2, 4)
+
+    cost_volume = (left_volume * right_volume).mean(dim=1)
+    return cost_volume.contiguous()
 
 
 def SpatialTransformer_grid(x, y, disp_range_samples):
