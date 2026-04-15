@@ -44,6 +44,14 @@ To compute the model complexity (MACs), use:
 python flops_count.py
 ```
 
+##  Runtime
+To measure the inference time, run:
+```
+python profile_speed.py
+```
+This script uses CUDA synchronization for more accurate latency measurement.
+The initial version followed the evaluation practice of previous methods and reported runtime using `evaluate_stereo.py`
+
 ## Citation 
 If you find this work useful, please consider citing:
 ```
