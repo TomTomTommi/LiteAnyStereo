@@ -11,6 +11,8 @@ Lite Any Stereo: Efficient Zero-Shot Stereo Matching<h1>
 
 <img src="./assets/flower.gif" alt="drawing" width="400"/> <img src="./assets/motorbike.gif" alt="drawing" width="400"/>
 
+![Demo](./assets/fig1.png)
+
 ###
 This work presents Lite Any Stereo. It is a super efficient stereo matching model with strong zero-shot generalization ability. It outperforms or match accuracy-oriented models that do not use foundational priors, while requiring less than 1% of their computational cost.
 
