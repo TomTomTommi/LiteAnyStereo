@@ -22,8 +22,8 @@ This repository serves as the shared codebase for the LAS series. It currently c
 
 | Version | Title | Resources | Status |
 | --- | --- | --- | --- |
-| LAS1 | Lite Any Stereo: Efficient Zero-Shot Stereo Matching | [Paper](https://arxiv.org/abs/2511.16555), [Project page](https://tomtomtommi.github.io/LiteAnyStereo/) | Code released |
-| LAS2 | Lite Any Stereo V2: Faster and Stronger Efficient Zero-Shot Stereo Matching | [Project page](https://tomtomtommi.github.io/LiteAnyStereoV2/) | Finished; paper/code coming soon |
+| LAS1 | Lite Any Stereo: Efficient Zero-Shot Stereo Matching | [Paper](https://arxiv.org/abs/2511.16555), [Project page](https://tomtomtommi.github.io/LiteAnyStereo/) | CVPR 2026 |
+| LAS2 | Lite Any Stereo V2: Faster and Stronger Efficient Zero-Shot Stereo Matching | [Project page](https://tomtomtommi.github.io/LiteAnyStereoV2/) | paper/code coming soon |
 
 ## Performance Snapshot
 
