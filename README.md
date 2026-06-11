@@ -1,22 +1,27 @@
 <h1 align='center' style="text-align:center; font-weight:bold; font-size:2.0em;letter-spacing:2.0px;">
-Lite Any Stereo: Efficient Zero-Shot Stereo Matching<h1>  
+Lite Any Stereo (LAS) Series<h1>  
 
 <div align="center">
   <a href="https://arxiv.org/abs/2511.16555" target="_blank" rel="external nofollow noopener">
-  <img src="https://img.shields.io/badge/Paper-Arxiv-red" alt="Paper arXiv"></a>
-  <a href='https://tomtomtommi.github.io/LiteAnyStereo/'><img src='https://img.shields.io/badge/-Project Page-deepgreen' alt='Project Page'></a>
+  <img src="https://img.shields.io/badge/LAS-Paper%20%28arXiv%29-red" alt="LAS paper arXiv"></a>
+  <a href='https://tomtomtommi.github.io/LiteAnyStereo/'><img src='https://img.shields.io/badge/LAS-Project%20Page-deepgreen' alt='LAS Project Page'></a>
+  <a href='https://tomtomtommi.github.io/LiteAnyStereoV2/'><img src='https://img.shields.io/badge/LAS%20V2-Project%20Page-blue' alt='LAS V2 Project Page'></a>
 </div>
 </p>
 
+Welcome to the official repository for the **Lite Any Stereo (LAS) series**. This repository currently contains the released code, checkpoints, demos, and evaluation scripts for **Lite Any Stereo (LAS/V1)**, and will also host the upcoming **Lite Any Stereo V2 (LAS2)** code release.
 
-<img src="./assets/flower.gif" alt="drawing" width="400"/> <img src="./assets/motorbike.gif" alt="drawing" width="400"/>
+## Latest Update
 
-![Demo](./assets/fig1.png)
+**Lite Any Stereo V2: Faster and Stronger Efficient Zero-Shot Stereo Matching** is now finished. Please visit the [LAS V2 project page](https://tomtomtommi.github.io/LiteAnyStereoV2/) for the latest results and interactive comparisons.
 
-###
-This work presents Lite Any Stereo. It is a super efficient stereo matching model with strong zero-shot generalization ability. It outperforms or match accuracy-oriented models that do not use foundational priors, while requiring less than 1% of their computational cost.
+The LAS V2 paper and code will be released soon. The V2 code will be added to this repository, so this repo should be used as the code link for the LAS series.
 
-## Demo 
+## Lite Any Stereo
+
+Lite Any Stereo (LAS/V1) is a super efficient stereo matching model with strong zero-shot generalization ability. It outperforms or matches accuracy-oriented models that do not use foundational priors, while requiring less than 1% of their computational cost.
+
+## Demo
 Several example stereo image pairs are provided in the `/assets/` directory. 
 
 You can visualize zero-shot stereo matching results of Lite Any Stereo on real-world scenes by running:
@@ -52,8 +57,8 @@ python profile_speed.py
 This script uses CUDA synchronization for more accurate latency measurement.
 The initial version followed the evaluation practice of previous methods and reported runtime using `evaluate_stereo.py`
 
-## Citation 
-If you find this work useful, please consider citing:
+## Citation
+If you find the released LAS/V1 code useful, please consider citing:
 ```
 @article{jing2025lite,
   title={Lite Any Stereo: Efficient Zero-Shot Stereo Matching},
@@ -62,3 +67,5 @@ If you find this work useful, please consider citing:
   year={2025}
 }
 ```
+
+The LAS V2 citation will be added when the paper is available.
