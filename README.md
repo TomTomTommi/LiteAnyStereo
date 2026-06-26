@@ -35,7 +35,7 @@
 
 ## Checkpoints
 
-Place the pretrained checkpoints in `./checkpoints/` ([Google Drive](https://drive.google.com/drive/folders/1UvDx296pVk7pC2rozKIpQF_EXcOleZOB?usp=sharing)). The release uses these default names:
+The pretrained checkpoints are hosted on [Hugging Face](https://huggingface.co/tomtomtommi/LiteAnyStereoV2). A Google Drive mirror is also available [here](https://drive.google.com/drive/folders/1UvDx296pVk7pC2rozKIpQF_EXcOleZOB?usp=sharing). Please place the downloaded checkpoints in `./checkpoints/`. The release uses the following default filenames:
 
 | Model | Default checkpoint |
 | --- | --- |
