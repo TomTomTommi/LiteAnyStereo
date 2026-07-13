@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+ 
+# Virtual environments
+.venv/
+venv/
+env/
+ 
+# PyTorch / ML
+*.pth
+*.pt
+*.ckpt
+*.onnx
+checkpoints/
+runs/
+wandb/
+*.log
+ 
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+ 
+# Test output
+*.png
+!assets/**/*.png

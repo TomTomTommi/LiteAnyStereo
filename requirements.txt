@@ -1,0 +1,18 @@
+--extra-index-url https://download.pytorch.org/whl/cu126
+
+torch
+torchvision
+numpy
+scipy
+opencv-python
+pillow
+imageio
+pandas
+joblib
+open3d
+trimesh
+timm
+thop
+transformations
+onnxruntime
+onnxscript
