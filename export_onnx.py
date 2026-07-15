@@ -67,7 +67,7 @@ class Wrapper(nn.Module):
 # Export checkpoint to ONNX file. 
 # - Fix uncompatable functions.
 # - Export with fixed input shape.
-def export(version, model_size, restore_ckpt, width, height, max_disp, output_name):
+def export(version, model_size, restore_ckpt, width, height, max_disp, output_name, simplify=False):
     # Replace functions that not compatable with ONNX export with an equivalent fixed functions.
     submodule.context_upsample = _context_upsample
     liteanystereov2.context_upsample = _context_upsample
@@ -89,9 +89,25 @@ def export(version, model_size, restore_ckpt, width, height, max_disp, output_na
         model, (left, right), output_name,
         input_names=["left", "right"], output_names=["disparity"],
         opset_version=18,
-        dynamo=False
+        do_constant_folding=True,
+        dynamo=False,
     )
     print("Saved", output_name)
+
+    if simplify:
+        try:
+            import onnx
+            import onnxsim
+
+            model_onnx = onnx.load(output_name)
+            model_opt, check = onnxsim.simplify(model_onnx)
+            if not check:
+                print("Simplifier: validation check failed, keeping original model.")
+            else:
+                onnx.save(model_opt, output_name)
+                print("Simplification done.")
+        except Exception as e:
+            print(f"Simplifier failure: {e}")
 
 
 def parse_args():
@@ -103,6 +119,7 @@ def parse_args():
     parser.add_argument("--height", type=int, default=384, help="export input height")
     parser.add_argument("--max_disp", type=int, default=192, help="maximum disparity used by the model")
     parser.add_argument("--output_name", default="liteanystereo.onnx", help="output ONNX file path")
+    parser.add_argument("--simplify", action="store_true", help="simplify exported ONNX graph")
     return parser.parse_args()
 
 
@@ -114,4 +131,5 @@ if __name__ == "__main__":
            width=args.width,
            height=args.height,
            max_disp=args.max_disp,
-           output_name=args.output_name)
+           output_name=args.output_name,
+           simplify=args.simplify)

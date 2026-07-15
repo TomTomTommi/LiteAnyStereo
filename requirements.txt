@@ -16,3 +16,4 @@ thop
 transformations
 onnxruntime
 onnxscript
+onnxsim
