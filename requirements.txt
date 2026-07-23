@@ -5,7 +5,6 @@ torchvision
 numpy
 scipy
 opencv-python
-pillow
 imageio
 pandas
 joblib
